@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	float dam_height, flow_rate;
+	float work;
+	float power;
+	float g = 9.80;
+	float efficiency_const = 0.9;
+	
+	printf("Enter height of the dam : ");
+	scanf("%f", &dam_height);
+	printf("\nEnter flow_rate : ");
+	scanf("%f", &flow_rate);
+
+	float m = 1* flow_rate * pow(10,3);
+
+	work = m * g * dam_height;
+	power = efficiency_const * work;
+
+	printf("\nPower : %f ", power);
+	return 0;
+
+}

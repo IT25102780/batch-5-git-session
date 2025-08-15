@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+	float takeoff_speed, distance, acceleration;
+	float time;
+
+	printf("Enter takeoff speed : ");
+	scanf("%f",&takeoff_speed);
+	printf("\nEnter distance : ");
+	scanf("%f", &distance);
+	
+
+	time = 2*distance/ takeoff_speed;
+
+	acceleration = (takeoff_speed - 0 )/ time;
+	printf("Acceleration : %f ", acceleration);
+
+	return 0;
+
+}
